@@ -1,6 +1,6 @@
 ## Docker Node dev environment
 #### - with custom user [from Mosh]
-#### - image size: 116,63 MB
+#### - image size: 132 MB
 
 #
 
