@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 14,
+
+    "files.associations": {
+        ".env": "ini",
+        ".env.production": "ini",
+        "*.neon": "yaml"
+    },
+}

@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  dev-env:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+      args:
+        NODE_USER: '${NODE_USER:-node}'
+        NODE_PORT: '${NODE_PORT:-3000}'
+        NODE_APP: '${NODE_APP}'
+    user: $NODE_USER
+    environment:
+      - NODE_ENV=dev
+    restart: on-failure
+    volumes:
+      - ./src:${NODE_APP}/src
+    ports:
+      - ${NODE_PORT}:3000
